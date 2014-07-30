@@ -10,7 +10,7 @@ collections of shapes
 */
 
 import (
-	"github.com/skelterjohn/geom"
+	"github.com/jbeda/geom"
 )
 
 func col1() (items []Item) {

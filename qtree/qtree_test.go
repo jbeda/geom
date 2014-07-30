@@ -6,7 +6,7 @@ package qtree
 
 import (
 	"fmt"
-	"github.com/skelterjohn/geom"
+	"github.com/jbeda/geom"
 	"testing"
 )
 
