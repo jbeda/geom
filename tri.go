@@ -47,6 +47,24 @@ func (me *Triangle) Equals(oi interface{}) bool {
 	return false
 }
 
+func (me *Triangle) Translate(offset Coord) {
+	me.A.Translate(offset)
+	me.B.Translate(offset)
+	me.C.Translate(offset)
+}
+
+func (me *Triangle) Scale(xf, yf float64) {
+	me.A.Scale(xf, yf)
+	me.B.Scale(xf, yf)
+	me.C.Scale(xf, yf)
+}
+
+func (me *Triangle) Rotate(rad float64) {
+	me.A.Rotate(rad)
+	me.B.Rotate(rad)
+	me.C.Rotate(rad)
+}
+
 func (me *Triangle) Vertices() (vertices []Coord) {
 	vertices = []Coord{me.A, me.B, me.C}
 	return
