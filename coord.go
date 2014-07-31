@@ -140,9 +140,6 @@ func VertexAngle(A, B, C Coord) (r float64) {
 	X := A.Minus(B)
 	Y := C.Minus(B)
 	r = VectorAngle(X, Y)
-	if r < 0 {
-		r *= -1
-	}
 	return
 }
 
