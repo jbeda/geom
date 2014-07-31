@@ -8,8 +8,8 @@ type Triangle struct {
 	A, B, C Coord
 }
 
-func (me *Triangle) Bounds() (bounds *Rect) {
-	bounds = &Rect{me.A, me.A}
+func (me *Triangle) Bounds() (bounds Rect) {
+	bounds = Rect{me.A, me.A}
 	bounds.ExpandToContainCoord(me.B)
 	bounds.ExpandToContainCoord(me.C)
 	return
